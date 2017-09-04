@@ -23,7 +23,7 @@ const data = [
     type: "notebook",
     name: "Acer",
     price: "$530",
-    rating: 4.3
+    rating: 2.3
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const data = [
     type: "notebook",
     name: "lenovo",
     price: "$600",
-    rating: 3.8
+    rating: 3
   }, {
     id: 8,
     type: "phone",

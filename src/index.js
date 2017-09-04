@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
 import createBrowserHistory from 'history/createBrowserHistory';
-import 'bootstrap/dist/css/bootstrap.css';
-import './global-styles/index.global.scss';
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.css';
+import './styles/common/index.scss';
 
 const history = createBrowserHistory();
 

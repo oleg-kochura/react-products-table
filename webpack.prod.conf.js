@@ -16,7 +16,7 @@ const extractSCSSModules = new ExtractTextPlugin({
 });
 
 const extractSCSSGlobals = new ExtractTextPlugin({
-  filename: 'global-styles.css',
+  filename: 'common.css',
   disable: false,
   allChunks: true,
 });

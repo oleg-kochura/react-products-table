@@ -4,7 +4,7 @@ import cssModules from 'react-css-modules';
 import store from './store';
 import TableContainer from './containers/Table';
 import FilterContainer from './containers/Filter';
-import styles from './app.scss';
+import styles from './styles/app.scss';
 
 
 const App = () => (

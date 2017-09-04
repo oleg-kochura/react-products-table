@@ -1,6 +1,6 @@
 import React from 'react';
 import cssModules from 'react-css-modules';
-import styles from './filterList.scss';
+import styles from '../styles/filterList.scss';
 
 
 const Checkbox = ({filter, onChange}) => (

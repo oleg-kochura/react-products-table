@@ -1,5 +1,7 @@
 import React  from 'react';
 import ProductItem from '../components/ProductItem';
+import cssModules from 'react-css-modules';
+import styles from '../styles/table.scss';
 
 
 const sortBy = {
@@ -14,8 +16,8 @@ const Arrow = ({order}) => {
   if(order === 'desc') return <span>↑</span>;
 };
 
-const TableHeader = ({onSorting, sortByOrder}) => (
-  <thead>
+const TableHeader = ({ onSorting, sortByOrder }) => (
+  <thead className="thead-inverse">
     <tr>
       <th scope="row">
         <span>Check all</span>
@@ -43,11 +45,12 @@ const TableBody = ({ products }) => (
 
 
 const Table = ({products, onSorting, sortByOrder }) => (
-  <table className="table">
-    <TableHeader onSorting={onSorting} sortByOrder={sortByOrder}/>
+  <table className="table table-striped" styleName="custom-table">
+    <TableHeader onSorting={onSorting}
+                 sortByOrder={sortByOrder} />
     <TableBody products={products}/>
   </table>
 );
 
 
-export default Table;
+export default cssModules(Table, styles, { allowMultiple: true });

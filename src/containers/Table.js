@@ -26,7 +26,7 @@ class TableContainer extends Component {
     return (
       <Table products={products}
              onSorting={this.sorting}
-             sortByOrder={sortBy}/>
+             sortByOrder={sortBy} />
     )
   }
 }
